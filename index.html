@@ -1,5 +1,5 @@
 <head>
-<title>YOKDIL/YDS/IELTS/TOEFL | Point Converter</title>
+<title>YOKDIL/YDS/IELTS/TOEFL/CEFR | Point Converter</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -145,7 +145,7 @@ var output = '<div class="row">';
 var count = 1;
 
 $.each(data, function(key, val){
-if ((val.yds_puan.search(regex) != -1) || (val.ielts_puan.search(regex) != -1)) {
+if ((val.yds_puan.search(regex) != -1) || (val.ielts_puan.search(regex) != -1) || (val.cefr.search(regex) != -1)) {
 output += '<div class="col-md-6 well">';
 output += '<div class="col-md-7">';
 output += '<b> YDS : ' + val.yds_puan + '</b><br>';
@@ -177,7 +177,7 @@ $('#filter-records').html(output);
   <div class="form-group">
     <label for="exampleInputEmail1">YOKDIL/YDS/IELTS Point</label>
     <input type="text" class="form-control" id="txt-search" name="yokdiltest">
-    <small id="emailHelp" class="form-text text-muted">Please write your YOKDIL/YDS/IELTS Point.</small>
+    <small id="emailHelp" class="form-text text-muted">Please write your YOKDIL/YDS/IELTS/CEFR Point.</small>
   </div>
 </form>
 </center>
