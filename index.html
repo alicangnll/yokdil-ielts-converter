@@ -144,7 +144,7 @@ var output = '<div class="row">';
 var count = 1;
 
 $.each(data, function(key, val){
-if ((val.yds_puan.search(regex) != -1) || (val.ielts_puan.search(regex) != -1) || (val.cefr.search(regex) != -1)) {
+if ((val.yds_puan.search(regex) != -1) || (val.ielts_puan.search(regex) != -1) || (val.cefr.search(regex) != -1) || (val.toefl_ibt.search(regex) != -1) || (val.toefl_cbt.search(regex) != -1) || (val.toefl_pbt.search(regex) != -1)) {
 output += '<div class="col-md-6 well">';
 output += '<div class="col-md-7">';
 output += '<b> YDS : ' + val.yds_puan + '</b><br>';
